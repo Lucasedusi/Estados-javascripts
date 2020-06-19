@@ -1,3 +1,4 @@
 {
-  "present": ["babel/present-env"]
+  "present": ["babel/present-env"],
+  "plugin": ["@babel/plugin-proposal-object-rest-spread"]
 }
