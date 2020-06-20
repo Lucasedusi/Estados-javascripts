@@ -1,19 +1,10 @@
-alert('teste')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+axios.get('https://api.github.com/users/lucasedusi')
+  .then((response) => {
+    console.log(response.data.name)
+  })
+  .catch((error) => {
+    console.log('erro33')
+  })
 
 // const ArrayEs6 = [1, 5, 8, 4, 5];
 
