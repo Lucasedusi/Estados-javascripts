@@ -1,10 +1,26 @@
-axios.get('https://api.github.com/users/lucasedusi')
+import axios from './main';
+
+class Api {
+  static async getUserInfo(username) {
+    try {
+      const response = await axios.get(`https://api.github.com/users/${username}`);
+      console.log(response);
+    } catch (error) {
+      console.warn('Erro na API');
+    }
+  }
+}
+
+Api.getUserInfo('lucasedusi');
+
+axios
+  .get('https://api.github.com/users/lucasedusi')
   .then((response) => {
-    console.log(response.data.name)
+    console.log(response.data.name);
   })
   .catch((error) => {
-    console.log('erro33')
-  })
+    console.log('erro33');
+  });
 
 // const ArrayEs6 = [1, 5, 8, 4, 5];
 
@@ -51,7 +67,6 @@ axios.get('https://api.github.com/users/lucasedusi')
 
 // mostrarDados(users)
 
-
 // // Operadores REST
 // const funcionario = {
 //   nome1: 'Lucas',
@@ -65,7 +80,6 @@ axios.get('https://api.github.com/users/lucasedusi')
 
 // // console.log(nome, teste);
 // // console.log(c);
-
 
 // // SPREAD
 
