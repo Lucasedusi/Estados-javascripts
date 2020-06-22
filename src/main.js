@@ -23,92 +23,93 @@ axios
     console.log('erro33');
   });
 
-// const ArrayEs6 = [1, 5, 8, 4, 5];
+const ArrayEs6 = [1, 5, 8, 4, 5];
 
-// // Exemplo de Método Map
-// const allBost = ArrayEs6.map((item) => {
-//   return item;
-// });
+// Exemplo de Método Map
+const allBost = ArrayEs6.map((item) => {
+  return item;
+});
 
-// // Exemplo de Método Filter
-// const filter = ArrayEs6.filter((item) => {
-//   return item % 2 === 0;
-// });
+// Exemplo de Método Filter
+const filter = ArrayEs6.filter((item) => {
+  return item % 2 === 0;
+});
 
-// // Exemplo de Método Find
-// const find = ArrayEs6.find((item) => {
-//   return item % 2 === 0;
-// });
+// Exemplo de Método Find
+const find = ArrayEs6.find((item) => {
+  return item % 2 === 0;
+});
 
-// // Exemplo de Arrow functions
-// const test = () => ({ nome: 'lucas' });
-// const soma = (a = 1, b = 2) => a + b;
+// Exemplo de Arrow functions
+const test = () => ({ nome: 'lucas' });
+const soma = (a = 1, b = 2) => a + b;
 
-// // Usando Desestruturação
-// const users = {
-//   nome: 'Lucas',
-//   idade: 23,
-//   endereco: {
-//     cidade: 'Mutun',
-//     estado: 'Goiás',
-//   },
-// };
 
-// const { nome, idade, endereco: { cidade } } = users
+// Usando Desestruturação
+const users = {
+  nome: 'Lucas',
+  idade: 23,
+  endereco: {
+    cidade: 'Mutun',
+    estado: 'Goiás',
+  },
+};
 
-// // console.log(nome)
-// // console.log(idade)
-// // console.log(cidade)
+const { nome, idade, endereco: { cidade } } = users
 
-// const mostrarDados = ({ nome, idade, endereco: { cidade }}) => {
-//   // console.log(nome);
-//   // console.log(idade);
-//   // console.log(cidade);
-// };
+// console.log(nome)
+// console.log(idade)
+// console.log(cidade)
 
-// mostrarDados(users)
+const mostrarDados = ({ nome, idade, endereco: { cidade }}) => {
+  // console.log(nome);
+  // console.log(idade);
+  // console.log(cidade);
+};
 
-// // Operadores REST
-// const funcionario = {
-//   nome1: 'Lucas',
-//   idade1: 23,
-//   sexo: 'Masculino',
-// }
+mostrarDados(users)
 
-// const arr = [1, 2, 3, 4]
+// Operadores REST
+const funcionario = {
+  nome1: 'Lucas',
+  idade1: 23,
+  sexo: 'Masculino',
+}
 
-// const { nome1, ...teste } = funcionario;
+const arr = [1, 2, 3, 4]
 
-// // console.log(nome, teste);
-// // console.log(c);
+const { nome1, ...teste } = funcionario;
 
-// // SPREAD
+// console.log(nome, teste);
+// console.log(c);
 
-// const numero1 = [ 1, 2, 3 ];
-// const numero2 = [ 4, 5, 6 ];
+// SPREAD
 
-// const juntos = [ ...numero1, ...numero2 ]
+const numero1 = [ 1, 2, 3 ];
+const numero2 = [ 4, 5, 6 ];
 
-// // console.log(juntos)
+const juntos = [ ...numero1, ...numero2 ]
 
-// const info = {
-//   nome: 'José',
-//   idade: 23,
-//   cidade: 'Mutun'
-// }
+// console.log(juntos)
 
-// const alterInfo = { ...info, nome: 'Lucas', cidade: 'Porangatu' }
+const info = {
+  nome: 'José',
+  idade: 23,
+  cidade: 'Mutun'
+}
 
-// // console.log(info);
-// // console.log(alterInfo);
+const alterInfo = { ...info, nome: 'Lucas', cidade: 'Porangatu' }
 
-// // Template Literals
+// console.log(info);
+// console.log(alterInfo);
 
-// const myName = {
-//   meunome: 'lucas',
-//   meusobrenome:'eduardo',
-// }
+// Template Literals
 
-// const { meunome, meusobrenome } = myName;
+const myName = {
+  meunome: 'lucas',
+  meusobrenome:'eduardo',
+}
 
-// // console.log(`Meu primeiro nome é ${meunome} e o meu segundo nome é ${meusobrenome}`)
+const { meunome, meusobrenome } = myName;
+
+// console.log(`Meu primeiro nome é ${meunome} e o meu segundo nome é ${meusobrenome}`)
